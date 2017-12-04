@@ -80,6 +80,10 @@ function createNotification() {
    	});
 }
 function createNotification2() {
+   
+    var currentTime = new Date().getTime(); //current time
+    var notificationTime = new Date(currentTime + 1000); //delayed time  - add 1 second
+   
     cordova.plugins.notification.local.schedule({ 
     	id: 		2,
         title: 		"Hey You",
