@@ -17,7 +17,7 @@
         Chris P. Bowers
     </author>
 	
-	
+	<plugin name="cordova-plugin-dialogs"/> 
 	
 	<!-- required plugins go here -->
 	     
