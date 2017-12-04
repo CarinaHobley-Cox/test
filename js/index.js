@@ -91,4 +91,8 @@ function createNotification2() {
         date: 		notificationTime, 
         badge: 		notification_count++
         });
+   
+    cordova.plugins.notification.local.on("click", function (notification) {
+        alert ("hello");
+})
 }
