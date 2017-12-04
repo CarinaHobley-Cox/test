@@ -50,8 +50,10 @@ function dialogDismissed(buttonIndex) {
         createNotification()              
     }
     
-   	else if(buttonIndex==2) new Toast({content: 'Carry on working', duration: 3000});
-
+   	else if(buttonIndex==2) {
+        new Toast({content: 'Carry on working', duration: 3000});
+createNotification2()
+}
 }
 
    
@@ -74,6 +76,15 @@ function createNotification() {
         message: 	"After you have eaten, get back to work",
         date: 		notificationTime, 
         badge: 		notification_count++
+        
    	});
-    
+}
+function createNotification2() {
+    cordova.plugins.notification.local.schedule({ 
+    	id: 		2,
+        title: 		"Hey You",
+        message: 	"Not Hungry",
+        date: 		notificationTime, 
+        badge: 		notification_count++
+        });
 }
