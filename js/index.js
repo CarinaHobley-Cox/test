@@ -45,7 +45,11 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "Eat somet toast", duration: 3000});
+	if(buttonIndex==1) {
+        new Toast({content: "Eat some toast", duration: 3000});
+        createNotification()              
+    }
+    
    	else if(buttonIndex==2) new Toast({content: 'Carry on working', duration: 3000});
 
 }
