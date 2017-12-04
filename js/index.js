@@ -71,7 +71,7 @@ function createNotification() {
     cordova.plugins.notification.local.schedule({ 
     	id: 		1,
         title: 		"Hey you",
-        message: 	"This is an example notification",
+        message: 	"After you have eaten, get back to work",
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
